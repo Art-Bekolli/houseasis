@@ -333,6 +333,16 @@ header .container {
   grid-template-columns: 1fr 1fr 1fr;
   position: relative;
 }
+@media only screen and (max-width: 767px) {
+  header .container {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 820px) and (orientation: landscape) {
+  header .container {
+    display: none;
+  }
+}
 header .container > *:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,6 +400,86 @@ header .search img {
      object-fit: contain;
 }
 
+.mobile-header {
+  display: none;
+}
+.mobile-header img {
+  max-width: 70px;
+}
+@media only screen and (max-width: 767px) {
+  .mobile-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 820px) and (orientation: landscape) {
+  .mobile-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.menu-btn-1 {
+  height: 32px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.menu-btn-1 span,
+.menu-btn-1 span::before,
+.menu-btn-1 span::after {
+  background: red;
+  border-radius: 3px;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  margin-top: 13px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-btn-1 span::before {
+  margin-top: -12px;
+}
+
+.menu-btn-1 span::after {
+  margin-top: 12px;
+}
+
+.menu-btn-1.active span {
+  background: transparent;
+}
+
+.menu-btn-1.active span::before {
+  margin-top: 0;
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-btn-1.active span::after {
+  margin-top: 0;
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 footer {
   color: #333232;
   background-color: #f6f6f6;
@@ -441,6 +531,22 @@ body#tinymce {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media only screen and (max-width: 767px) {
+  .section-hero .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 820px) and (orientation: landscape) {
+  .section-hero .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .section-hero .left {
   display: -webkit-box;
@@ -455,6 +561,16 @@ body#tinymce {
           align-items: center;
   gap: 50px;
   margin-left: 35px;
+}
+@media only screen and (max-width: 767px) {
+  .section-hero .left {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 820px) and (orientation: landscape) {
+  .section-hero .left {
+    margin-left: 0;
+  }
 }
 .section-hero .left h1 {
   font-size: 50px;
@@ -520,11 +636,25 @@ body#tinymce {
           align-items: flex-start;
   margin-right: 88px;
 }
+@media only screen and (max-width: 767px) {
+  .section-hero .right {
+    margin-right: 0;
+    padding: 10px;
+  }
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 820px) and (orientation: landscape) {
+  .section-hero .right {
+    margin-right: 0;
+    padding: 10px;
+  }
+}
 .section-hero .right img {
   max-width: 724px;
   width: 100%;
   min-height: 577px;
   max-height: 577px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section-categories .title {
@@ -564,6 +694,8 @@ body#tinymce {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .section-categories .cards a {
   text-decoration: none;
