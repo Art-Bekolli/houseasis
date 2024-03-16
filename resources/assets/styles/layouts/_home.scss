@@ -1,0 +1,117 @@
+.section-hero {
+  margin-top: 37px;
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-left: 35px;
+
+    h1 {
+      font-size: 50px;
+      color: #0096ff;
+      font-weight: 600;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 550px;
+      width: 100%;
+      justify-content: center;
+      column-gap: 20px;
+      row-gap: 5px;
+    }
+    .card {
+      box-shadow: #cedfff 0 0 10px 0;
+      a {
+        display: flex;
+        flex-direction: column;
+        max-width: 260px;
+        gap: 10px;
+        justify-content: space-between;
+        padding: 20px 0 10px;
+        text-decoration: none;
+        color: #3a3a3a;
+        font-weight: 600;
+        img {
+          max-height: 87px;
+          min-width: 176px;
+          max-width: 176px;
+          width: 100%;
+          object-fit: cover;
+        }
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .right {
+    display: flex;
+    min-height: 638px;
+    align-items: flex-start;
+    margin-right: 88px;
+    img {
+      max-width: 724px;
+      width: 100%;
+      min-height: 577px;
+      max-height: 577px;
+    }
+  }
+}
+.section-categories {
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 65px;
+    h1 {
+      font-size: 52px;
+      color: #0096ff;
+      font-weight: 700;
+ 
+    }
+    .view {
+      background-color: #9c80f7;
+      box-shadow: #cedfff 1px 20px 11px -6px;
+      color: #fff;
+      border-radius: 3px;
+      line-height: 1;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      margin-right: 100px;
+    }
+  }
+  .cards {
+    display: flex;
+    gap: 10px;
+    a {
+      text-decoration: none;
+    }
+    .card {
+      box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px 0;
+      img {
+        max-width: 345px;
+        width: 100%;
+        max-height: 230px;
+        min-height: 230px;
+        padding: 10px;
+      }
+      h1 {
+        padding: 10px 10px 25px 10px;
+        color: #3a3a3a;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+      }
+    }
+  }
+}
