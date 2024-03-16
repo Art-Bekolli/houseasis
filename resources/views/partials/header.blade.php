@@ -10,6 +10,6 @@
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif
     </nav>
-    <a class="search" href="?s="><img src="@option('search')"></a>
+    <a class="search" href="?s="><img src="<?php the_field('search', 'option'); ?>"></a>
   </div>
 </header>

@@ -6,6 +6,6 @@
   </div>
   <hr>
   <div class="container">
-    @option('footer-text')
+    <?php the_field('footer-text', 'option'); ?>
   </div>
 </footer>
