@@ -3,6 +3,9 @@ export default {
     // JavaScript to be fired on all pages
   },
   finalize() {
-    // JavaScript to be fired on all pages, after page specific JS is fired
+    $('.menu-btn-1').on('click', function() {
+      $('.mobile-menu').toggleClass("mobile-menu-active");
+      $('body').toggleClass("overflow");
+    });
   },
 };

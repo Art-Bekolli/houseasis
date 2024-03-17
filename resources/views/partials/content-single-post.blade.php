@@ -4,7 +4,12 @@
     @title
 </div>
 <div class="content">
-    @content
+    @php
+    global $post;
+
+    $content = apply_filters('the_content',$post->post_content); echo $content;
+    
+    @endphp
 </div>
 </div>
 <div class="right">
@@ -16,10 +21,12 @@
         'posts_per_page'=> 4
     ])
     @posts
+    <a href="@permalink">
     <div class="recents">
     <img src="@thumbnail('full', false)">    
     <h1>@title</h1>
     </div>
+    </a>
     @endposts
 </div>
 </div>

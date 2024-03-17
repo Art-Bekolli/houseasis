@@ -27,5 +27,8 @@ footer{
         padding: 15px 0 40px;
         font-size: .8em;
         color: #3a3a3a;
+        @include mobile{
+            margin-right: 30px;
+        }
     }
 }

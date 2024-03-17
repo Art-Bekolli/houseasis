@@ -8,3 +8,9 @@
     max-width: 1500px;
     margin: auto;
 }
+
+body {
+    &.overflow{
+    overflow: hidden;
+    }
+}

@@ -32,6 +32,7 @@
       justify-content: center;
       column-gap: 20px;
       row-gap: 5px;
+      object-fit: cover;
     }
     .card {
       box-shadow: #cedfff 0 0 10px 0;
@@ -72,7 +73,7 @@
       width: 100%;
       min-height: 577px;
       max-height: 577px;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 }
@@ -84,6 +85,9 @@
     align-items: center;
     margin-bottom: 40px;
     margin-top: 65px;
+    @include mobile{
+      justify-content: space-evenly;
+    }
     h1 {
       font-size: 52px;
       color: #0096ff;
@@ -100,12 +104,16 @@
       text-align: center;
       text-decoration: none;
       margin-right: 100px;
+      @include mobile{
+        margin-right: 0;
+      }
     }
   }
   .cards {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
     a {
       text-decoration: none;
     }
