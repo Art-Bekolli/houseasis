@@ -822,6 +822,10 @@ body#tinymce {
   font-size: 20px;
   text-align: center;
   font-weight: 600;
+  max-width: 365px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .category-house {
@@ -877,6 +881,10 @@ body#tinymce {
           flex-direction: column;
   gap: 45px;
   min-height: 300px;
+  max-width: 350px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .category-house .cards .card_info h2 {
   font-size: 30px;
