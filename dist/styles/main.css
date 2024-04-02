@@ -991,6 +991,7 @@ body#tinymce {
   font-size: 18px;
   color: #3a3a3a;
   font-weight: 600;
+  max-width: 266px;
 }
 
 .search form {
